@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles/styles.scss';
 import store from './store';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 
 const container = document.getElementById('root') as HTMLElement;
 
@@ -14,7 +14,7 @@ if (container) {
     root.render(
       <React.StrictMode>
         <Provider store={store}>
-          <Component/>
+          <Component />
         </Provider>
       </React.StrictMode>
     );

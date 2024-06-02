@@ -1,10 +1,10 @@
-import Header from "./components/Header";
-import Filter from "./components/Filter";
-import TicketList from "./components/TicketList";
-import {useDispatch} from "react-redux";
-import {useEffect} from "react";
-import {fetchTickets} from "./ticketsSlice";
-import {AppDispatch} from "./store";
+import Header from './components/Header';
+import Filter from './components/Filter';
+import TicketList from './components/TicketList';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchTickets } from './ticketsSlice';
+import { AppDispatch } from './store';
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -15,10 +15,10 @@ function App() {
 
   return (
     <div className="container">
-      <Header/>
+      <Header />
       <main className="main">
-        <Filter/>
-        <TicketList/>
+        <Filter />
+        <TicketList />
       </main>
     </div>
   );

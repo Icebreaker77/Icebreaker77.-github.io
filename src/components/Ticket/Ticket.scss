@@ -1,4 +1,4 @@
-@import "../../styles/vars";
+@import '../../styles/vars';
 
 .ticket {
   padding: 20px;
@@ -44,7 +44,9 @@
     }
   }
 
-  &__route, &__time, &__duration {
+  &__route,
+  &__time,
+  &__duration {
     display: block;
   }
 

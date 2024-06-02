@@ -1,15 +1,19 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Ticket from '../Ticket';
-import {useDispatch, useSelector} from "react-redux";
-import {RootState} from "../../store";
-import {loadMoreTickets, setSortBy} from "../../ticketsSlice";
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../store';
+import { loadMoreTickets, setSortBy } from '../../ticketsSlice';
 import './TicketList.scss';
 
 const TicketList: React.FC = () => {
   const dispatch = useDispatch();
-  const tickets = useSelector((state: RootState) => state.tickets.filteredTickets);
+  const tickets = useSelector(
+    (state: RootState) => state.tickets.filteredTickets
+  );
   const page = useSelector((state: RootState) => state.tickets.page);
-  const ticketsPerPage = useSelector((state: RootState) => state.tickets.ticketsPerPage);
+  const ticketsPerPage = useSelector(
+    (state: RootState) => state.tickets.ticketsPerPage
+  );
   const [activeSort, setActiveSort] = useState<string>('price');
 
   const handleSortChange = (sortBy: string) => {
@@ -51,7 +55,9 @@ const TicketList: React.FC = () => {
         ))}
       </div>
       {displayedTickets.length < tickets.length && (
-        <button className="tickets__load-more" onClick={handleLoadMore}>Показати ще 5 квитків</button>
+        <button className="tickets__load-more" onClick={handleLoadMore}>
+          Показати ще 5 квитків
+        </button>
       )}
     </div>
   );

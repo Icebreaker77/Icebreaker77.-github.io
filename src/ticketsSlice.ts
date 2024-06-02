@@ -1,11 +1,14 @@
-import {createAsyncThunk, createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {Ticket, TicketsState} from './types';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Ticket, TicketsState } from './types';
 
-export const fetchTickets = createAsyncThunk<Ticket[]>('tickets/fetchTickets', async () => {
-  const response = await fetch('/tickets.json');
-  const data = await response.json();
-  return data.tickets;
-});
+export const fetchTickets = createAsyncThunk<Ticket[]>(
+  'tickets/fetchTickets',
+  async () => {
+    const response = await fetch('/tickets.json');
+    const data = await response.json();
+    return data.tickets;
+  }
+);
 
 const initialState: TicketsState = {
   allTickets: [],
@@ -35,7 +38,7 @@ const ticketsSlice = createSlice({
       if (state.filters.length === 0) {
         state.filteredTickets = state.allTickets;
       } else {
-        state.filteredTickets = state.allTickets.filter(ticket =>
+        state.filteredTickets = state.allTickets.filter((ticket) =>
           state.filters.includes(ticket.transfers.length)
         );
       }
@@ -53,7 +56,7 @@ const ticketsSlice = createSlice({
       state.allTickets = action.payload;
       state.filteredTickets = action.payload;
     });
-  }
+  },
 });
 
 const sortTickets = (tickets: Ticket[], sortBy: string) => {
@@ -88,9 +91,10 @@ const calculateTotalDuration = (ticket: Ticket) => {
     const durationParts = route.duration.split(' ');
     const hours = parseInt(durationParts[0].replace('h', ''), 10);
     const minutes = parseInt(durationParts[1].replace('m', ''), 10);
-    return total + (hours * 60) + minutes;
+    return total + hours * 60 + minutes;
   }, 0);
 };
 
-export const {resetFilters, setFilter, setSortBy, loadMoreTickets} = ticketsSlice.actions;
+export const { resetFilters, setFilter, setSortBy, loadMoreTickets } =
+  ticketsSlice.actions;
 export default ticketsSlice.reducer;

@@ -1,4 +1,4 @@
-@import "../../styles/vars";
+@import '../../styles/vars';
 
 .tickets {
   flex: 5;
@@ -14,7 +14,9 @@
     background-color: white;
     border: 1px solid $border-blue;
     cursor: pointer;
-    transition: background-color 0.1s, color 0.1s;
+    transition:
+      background-color 0.1s,
+      color 0.1s;
     font-size: 12px;
     line-height: 20px;
     text-align: center;

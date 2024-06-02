@@ -1,7 +1,7 @@
 import React from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {resetFilters, setFilter} from "../../ticketsSlice";
-import {RootState} from "../../store";
+import { useDispatch, useSelector } from 'react-redux';
+import { resetFilters, setFilter } from '../../ticketsSlice';
+import { RootState } from '../../store';
 import './Filter.scss';
 
 const Filter: React.FC = () => {
@@ -50,8 +50,7 @@ const Filter: React.FC = () => {
             onChange={handleFilterChange}
             checked={filters.includes(1)}
           />
-          <span className="custom-checkbox__checkmark"></span>
-          1 пересадка
+          <span className="custom-checkbox__checkmark"></span>1 пересадка
         </label>
         <label className="filter__option custom-checkbox">
           <input
@@ -61,8 +60,7 @@ const Filter: React.FC = () => {
             onChange={handleFilterChange}
             checked={filters.includes(2)}
           />
-          <span className="custom-checkbox__checkmark"></span>
-          2 пересадка
+          <span className="custom-checkbox__checkmark"></span>2 пересадка
         </label>
         <label className="filter__option custom-checkbox">
           <input
@@ -72,11 +70,11 @@ const Filter: React.FC = () => {
             onChange={handleFilterChange}
             checked={filters.includes(3)}
           />
-          <span className="custom-checkbox__checkmark"></span>
-          3 пересадка
+          <span className="custom-checkbox__checkmark"></span>3 пересадка
         </label>
       </div>
-    </div>)
+    </div>
+  );
 };
 
 export default Filter;
