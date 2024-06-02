@@ -1,0 +1,256 @@
+{
+  "tickets": [
+    {
+      "company": "AFE",
+      "price": "13300",
+      "transfers": [
+        "HKG"
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "15100",
+      "transfers": [
+        "HKG",
+        "JNB"
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "15400",
+      "transfers": [
+        "HKG"
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "21400",
+      "transfers": [
+        "HKG",
+        "JNB",
+        "JNB"
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-27T11:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-29T11:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "23900",
+      "transfers": [
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "21400",
+      "transfers": [
+        "HKG",
+        "JNB",
+        "JNB"
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-27T11:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-29T11:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "23900",
+      "transfers": [
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "23900",
+      "transfers": [
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "23900",
+      "transfers": [
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "23850",
+      "transfers": [
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-27T10:46:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-29T11:21:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "23800",
+      "transfers": [
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": "34h 15m"
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": "16h 30m"
+        }
+      ]
+    }
+  ]
+}
