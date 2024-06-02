@@ -1,0 +1,17 @@
+@import "../../styles/vars";
+
+.header {
+  &__logo {
+    display: block;
+
+    img {
+      box-shadow: rgba(149 157 165 / 20%) 0 8px 24px;
+    }
+
+    &:hover {
+      img {
+        box-shadow: rgba(100 100 111 / 20%) 0 7px 29px 0;
+      }
+    }
+  }
+}

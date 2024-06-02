@@ -1,0 +1,41 @@
+@import "../../styles/vars";
+@import "CustomCheckbox";
+
+.filter {
+  flex: 2;
+  height: fit-content;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0 0 0 / 10%);
+
+  &__title {
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $text-secondary;
+    margin: 15px 20px 10px;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__option {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 50px;
+
+    input {
+      margin-right: 5px;
+      border-color: $border-initial;
+    }
+
+    &:hover {
+      background: $background-hover;
+      cursor: pointer;
+    }
+  }
+}

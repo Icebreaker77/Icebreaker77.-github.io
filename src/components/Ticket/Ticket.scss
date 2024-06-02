@@ -1,0 +1,55 @@
+@import "../../styles/vars";
+
+.ticket {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0 0 0 / 10%);
+  margin-bottom: 20px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &-price {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: $text-accent;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__flight {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    &-title {
+      color: $text-hint;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &-segment {
+      flex: 1;
+    }
+  }
+
+  &__route, &__time, &__duration {
+    display: block;
+  }
+
+  &__airline {
+    font-size: 14px;
+    color: $secondary;
+  }
+}
