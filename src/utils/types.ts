@@ -3,7 +3,7 @@ export interface Route {
   to: string;
   departure: string;
   arrival: string;
-  duration: string;
+  duration: number;
 }
 
 export interface Ticket {

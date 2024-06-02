@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Ticket, TicketsState } from './types';
+import { Ticket, TicketsState } from './utils/types';
 
 export const fetchTickets = createAsyncThunk<Ticket[]>(
   'tickets/fetchTickets',
@@ -65,14 +65,26 @@ const sortTickets = (tickets: Ticket[], sortBy: string) => {
       return tickets.sort((a, b) => a.price - b.price);
     case 'duration':
       return tickets.sort((a, b) => {
-        const totalDurationA = calculateTotalDuration(a);
-        const totalDurationB = calculateTotalDuration(b);
+        const totalDurationA = a.routes.reduce(
+          (sum, route) => sum + route.duration,
+          0
+        );
+        const totalDurationB = b.routes.reduce(
+          (sum, route) => sum + route.duration,
+          0
+        );
         return totalDurationA - totalDurationB;
       });
     case 'optimal':
       return tickets.sort((a, b) => {
-        const totalDurationA = calculateTotalDuration(a);
-        const totalDurationB = calculateTotalDuration(b);
+        const totalDurationA = a.routes.reduce(
+          (sum, route) => sum + route.duration,
+          0
+        );
+        const totalDurationB = b.routes.reduce(
+          (sum, route) => sum + route.duration,
+          0
+        );
         if (totalDurationA !== totalDurationB) {
           return totalDurationA - totalDurationB;
         }
@@ -84,15 +96,6 @@ const sortTickets = (tickets: Ticket[], sortBy: string) => {
     default:
       return tickets;
   }
-};
-
-const calculateTotalDuration = (ticket: Ticket) => {
-  return ticket.routes.reduce((total, route) => {
-    const durationParts = route.duration.split(' ');
-    const hours = parseInt(durationParts[0].replace('h', ''), 10);
-    const minutes = parseInt(durationParts[1].replace('m', ''), 10);
-    return total + hours * 60 + minutes;
-  }, 0);
 };
 
 export const { resetFilters, setFilter, setSortBy, loadMoreTickets } =

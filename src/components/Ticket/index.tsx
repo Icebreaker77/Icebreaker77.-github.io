@@ -1,8 +1,9 @@
 import React from 'react';
-import { Route } from '../../types';
+import { Route } from '../../utils/types';
 import './Ticket.scss';
 import A4ELogo from '../../assets/a4e_logo.svg';
 import { formatTime } from '../../utils/formatTime';
+import { formatDuration } from '../../utils/totalDuration';
 
 interface TicketProps {
   price: number;
@@ -33,14 +34,18 @@ const Ticket: React.FC<TicketProps> = ({
             <span className="ticket__flight-title ticket__route">
               {route.from} - {route.to}
             </span>
-            <span className="ticket__time">
+            <span className="ticket__flight-description ticket__time">
               {formatTime(route.departure)} - {formatTime(route.arrival)}
             </span>
           </div>
+
           <div className="ticket__flight-segment">
             <div className="ticket__flight-title">В дорозі:</div>
-            <span className="ticket__duration">{route.duration}</span>
+            <span className="ticket__flight-description ticket__duration">
+              {formatDuration(route.duration)}
+            </span>
           </div>
+
           <div className="ticket__flight-segment">
             <div className="ticket__flight-title">
               {0 === transfers.length
@@ -49,7 +54,7 @@ const Ticket: React.FC<TicketProps> = ({
                   ? '1 пересадка'
                   : transfers.length + ' пересадки'}
             </div>
-            <div className="ticket__transfer">
+            <div className="ticket__flight-description ticket__transfer">
               {0 !== transfers.length && <span>{transfers.join(', ')}</span>}
             </div>
           </div>

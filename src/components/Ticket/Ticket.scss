@@ -39,6 +39,13 @@
       line-height: 18px;
     }
 
+    &-description {
+      color: $text-primary;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
     &-segment {
       flex: 1;
     }

@@ -12,14 +12,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 2055
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 990
         }
       ]
     },
@@ -36,14 +36,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 1035
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 2435
         }
       ]
     },
@@ -59,14 +59,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 1215
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 810
         }
       ]
     },
@@ -84,14 +84,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-27T11:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 1275
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-29T11:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 750
         }
       ]
     },
@@ -106,14 +106,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 875
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 570
         }
       ]
     },
@@ -131,14 +131,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-27T11:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 1111
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-29T11:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 443
         }
       ]
     },
@@ -153,14 +153,36 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 564
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 2343
+        }
+      ]
+    },
+    {
+      "company": "AFE",
+      "price": "3900",
+      "transfers": [
+      ],
+      "routes": [
+        {
+          "from": "LHR",
+          "to": "DXB",
+          "departure": "2024-06-27T10:45:00.000Z",
+          "arrival": "2024-06-28T08:00:00.000Z",
+          "duration": 12424
+        },
+        {
+          "from": "DXB",
+          "to": "LHR",
+          "departure": "2024-06-29T11:20:00.000Z",
+          "arrival": "2024-06-30T00:50:00.000Z",
+          "duration": 24142
         }
       ]
     },
@@ -175,36 +197,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 543
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
-        }
-      ]
-    },
-    {
-      "company": "AFE",
-      "price": "23900",
-      "transfers": [
-      ],
-      "routes": [
-        {
-          "from": "LHR",
-          "to": "DXB",
-          "departure": "2024-06-27T10:45:00.000Z",
-          "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
-        },
-        {
-          "from": "DXB",
-          "to": "LHR",
-          "departure": "2024-06-29T11:20:00.000Z",
-          "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 353
         }
       ]
     },
@@ -219,14 +219,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-27T10:46:00.000Z",
-          "duration": "34h 15m"
+          "duration": 2342
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-29T11:21:00.000Z",
-          "duration": "16h 30m"
+          "duration": 345
         }
       ]
     },
@@ -241,14 +241,14 @@
           "to": "DXB",
           "departure": "2024-06-27T10:45:00.000Z",
           "arrival": "2024-06-28T08:00:00.000Z",
-          "duration": "34h 15m"
+          "duration": 45543
         },
         {
           "from": "DXB",
           "to": "LHR",
           "departure": "2024-06-29T11:20:00.000Z",
           "arrival": "2024-06-30T00:50:00.000Z",
-          "duration": "16h 30m"
+          "duration": 54344
         }
       ]
     }
